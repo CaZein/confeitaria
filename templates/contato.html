@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Confeitaria Delícia</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contato.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Confeitaria Da vó</h1>
+            <div class="header-logo">
+                <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo Confeitaria Delícia">
+                </div>
+            <nav>
+                <ul>
+                    <li><a href=home>Início</a></li>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="index.html#cardapio">Cardápio</a></li>
+                    <li><a href=contatos>Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Gostaríamos muito de ouvir de você! Preencha o formulário abaixo ou entre em contato conosco pelos seguintes meios:</p>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Enviar</button>
+            </form>
+            <div class="contact-info">
+                <h3>Informações de Contato</h3>
+                <p>Email: contato@confeitariadavó.com.br</p>
+                <p>Telefone: (19) 99239-9226</p>
+                <p>Endereço: Rua das Flores, 123 - São Paulo, SP</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Confeitaria Da Vó. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
